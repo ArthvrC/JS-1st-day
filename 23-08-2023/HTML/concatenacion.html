@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concatenacion</title>
+    <style>
+    pre {
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        padding: 15px;
+        white-space: pre-wrap;
+      }
+      </style>
+</head>
+<body>
+    <h2>Concatenación en JavaScript</h2>
+
+    <pre>
+    // CC = Concatenacion
+    // La concatenación en JavaScript se refiere a la acción de unir o combinar dos o más cadenas de texto (strings) en una sola cadena.
+    // Es una operación comúnmente utilizada para construir cadenas más largas o para combinar variables o constantes con texto estático.
+    
+    // En JavaScript, la concatenación se realiza utilizando el operador de suma (+) para concatenar dos cadenas. Aquí tienes un ejemplo:
+    
+    var cadena1 = "Hola";
+    var cadena2 = "mundo";
+    var resultado = cadena1 + " " + cadena2;
+    console.log(resultado); // Imprime: "Hola mundo"
+    
+    // En el ejemplo anterior, las variables `cadena1` y `cadena2` se concatenan utilizando el operador de suma (+) y se agrega un espacio en blanco entre ellas para obtener la cadena resultante "Hola mundo"
+    
+    // Más ejemplos de CC
+    // Forzar strings
+    
+    let numero1 = 5;
+    let numero2 = 8;
+    
+    let string = "" + numero1 + numero2; // La parte del código de "" + ... hace que podamos juntar los 2 numeros 
+    
+    // Otra forma de forzar string
+    let num1 = "3";
+    let num2 = "4"; // Hacemos una variable de texto y colocamos en su interior la información
+    let res = num1 + num2;
+    
+    // Uso del concat()
+    // Con el concat si o si debemos tener un string ya que esto es un método de cadena
+    let dig1 = "4";
+    let dig2 = 6;
+    
+    let con = dig1.concat(dig2);
+    </pre>
+
+    <script src="../JS/concatenacion.js" type="text/JavaScript"></script>
+</body>
+</html>

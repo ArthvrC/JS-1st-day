@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document.write</title>
+</head>
+<body>
+    <p>document.write es una función en JavaScript que se utiliza para escribir contenido directamente en el documento HTML mientras se está cargando. Sin embargo, su uso no es muy común en aplicaciones modernas debido a algunos inconvenientes y limitaciones.
+        <br>
+        Cuando se utiliza document.write, el contenido se agrega en el lugar donde se encuentre el script, y esto puede tener efectos inesperados si se llama después de que la página haya terminado de cargar. Además, si utilizas document.write después de que el documento ya se haya cargado por completo, podría reemplazar todo el contenido del documento, borrando todo lo que estaba presente.
+        <br>
+        En su lugar, se recomienda utilizar métodos más modernos para manipular el DOM y agregar contenido dinámicamente, como innerHTML, appendChild, createElement, insertAdjacentHTML, etc. Estos métodos permiten una mayor flexibilidad y control sobre cómo se agrega el contenido al DOM y evitan los problemas asociados con document.write.
+        </p>
+        <button id="addInfo">Agregar Contenido</button>
+        <script src="./JS/document.write.js" type="text/JavaScript"></script>
+</body>
+</html>

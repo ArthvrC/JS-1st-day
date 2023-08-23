@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    pre {
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      padding: 15px;
+      white-space: pre-wrap;
+    }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Operadores Intermedios y Camel Case</h2>
+  
+  <pre>
+  // LOGICOS Y COMPARACION
+  // Camel Case
+  // Esto es fácil ya que la primer letra va en minúscula y la segunda de la palabra va en mayúscula.
+  // Ejemplos:
+  // buenosDias
+  // palabra1Palabra2
+  // decimeAlgoPorFavor
+  
+  // OPERADORES DE COMPARACION
+  // Los operadores de comparación, como su nombre dice, comparan dos expresiones y devuelven un valor BOOLEAN que representa la relación de sus valores.
+  
+  /********************************************************************/
+  // Comparación de igualdad ==
+  let numero = 2;
+  let numero2 = 3;
+  console.log(numero == numero2); // En este caso devuelve un FALSE porque compara si la primer variable es igual a la segunda.
+  
+  let t = 4;
+  let t1 = 4;
+  console.log(t == t1); // En este caso devuelve un TRUE porque las dos variables son iguales.
+  
+  /********************************************************************/
+  // Comparación de desigualdad !=
+  let txt = "texto";
+  let txt1 = "texto1";
+  console.log(txt != txt1); // En este caso nos devuelve un TRUE ya que pregunta si son diferentes, es el caso contrario del anterior.
+  
+  let cp = "cp1";
+  let cpd = "cp1";
+  console.log(cp != cpd); // Aquí nos devuelve FALSE ya que los dos son iguales.
+  
+  /********************************************************************/
+  // Igualdad estricta ===
+  // Este se encarga de comparar la información pero también de que sean del mismo tipo de datos.
+  
+  let nu = 3;
+  let nu1 = "3";
+  console.log(nu === nu1); // Esto devuelve un FALSE porque aunque tengan la misma información no son del mismo tipo de dato.
+  
+  let v1 = "hola";
+  let v2 = "hola";
+  console.log(v1 === v2); // Nos devuelve un TRUE ya que son de la misma información y del mismo tipo de datos, en este caso es con un string.
+  
+  /********************************************************************/
+  // Desigualdad estricta !==
+  let d1 = "dia";
+  let d2 = "dia";
+  console.log(d1 !== d2); // Nos devuelve FALSE porque pregunta si son estrictamente diferentes y como no lo son, devuelve un FALSE.
+  
+  let b1 = 3;
+  let b2 = "3";
+  console.log(b1 !== b2); // Nos devuelve un TRUE porque pregunta si son estrictamente desiguales y como lo son, devuelve un TRUE.
+  
+  /********************************************************************/
+  // Comparadores de mayoridad o minoridad
+  // Mayor que >
+  let r1 = 20;
+  let r2 = 10;
+  console.log(r1 > r2); // Devuelve TRUE porque 20 es mayor que 10.
+  
+  // Menor que <
+  let p1 = 15;
+  let p2 = 10;
+  console.log(p1 < p2); // Devuelve un FALSE porque 15 no es menor que 10.
+  
+  // Mayor o igual que
+  let s1 = 20;
+  let s2 = 10;
+  console.log(s1 >= s2); // Devuelve un TRUE porque 20 es mayor o igual que 10.
+  
+  // Menor o igual que
+  let g1 = 30;
+  let g2 = 20;
+  console.log(g1 <= g2); // Devuelve un FALSE porque 30 no es menor ni igual que 20.
+  
+  /********************************************************************/
+  // OPERADORES LOGICOS
+  // Los operadores lógicos nos devuelven un resultado a partir de que se cumpla o no una condición. Su resultado es booleano y sus operandos son valores lógicos o asimilables a ellos.
+  
+  /********************************************************************/
+  // Operador AND (&&)
+  // Si ambas condiciones se cumplen, devuelve TRUE.
+  // Si al menos una es FALSE, devuelve FALSE.
+  // El AND solo acepta valores BOOLEAN.
+  // Ejemplo:
+  
+   let y1 = 12;
+   let y2 = 24;
+   let afirmacion = y1 < y2;
+   let afirmacion1 = y1 != y2;
+   console.log(afirmacion && afirmacion1); // Esto nos devuelve un TRUE porque ambas afirmaciones son verdaderas.
+  
+   // Caso de false
+   let f1 = 12;
+   let f2 = 24;
+   let afirmacion2 = f1 > f2;
+   let afirmacion3 = f1 != f2;
+   console.log(afirmacion2 && afirmacion3); // Esto nos devuelve un FALSE porque la afirmación de que 12 sea mayor que 24 es falsa y, por ende, todo será falso.
+  
+   /********************************************************************/
+  
+   // Operador OR (||)
+   // En este caso, si al menos hay un TRUE, todo será TRUE.
+   let e1 = 12;
+   let e2 = 24;
+   let afirmacion4 = e1 > e2;
+   let afirmacion5 = e1 != e2;
+   console.log(afirmacion4 || afirmacion5);  // Nos devuelve TRUE porque la afirmación5 es verdadera y eso hace que todo sea verdadero.
+  
+   let q1 = 12;
+   let q2 = 24;
+   let afirmacion6 = q1 > q2;
+   let afirmacion7 = q1 == q2;
+   console.log(afirmacion6 || afirmacion7); // Nos devuelve un FALSE porque ambas afirmaciones son falsas.
+  
+   /********************************************************************/
+  
+   // Operador NOT (!)
+   // Este operador niega o hace FALSE algo que es TRUE o viceversa.
+   // Funciona solo con BOOLEAN.
+   // Ejemplo:
+  
+   let a1 = 12;
+   let a2 = 20;
+   let verificar = a1 > a2; // Esto es FALSE porque 12 no es mayor que 20.
+   console.log(!verificar); // Esto nos devuelve TRUE ya que le dice si la verificación fue FALSE, dará una respuesta en TRUE.
+  </pre>
+  
+  </body>
+</html>
